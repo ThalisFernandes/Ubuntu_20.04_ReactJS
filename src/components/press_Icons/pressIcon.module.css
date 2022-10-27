@@ -1,0 +1,20 @@
+.icon{
+    width:4.9rem;
+    height:4.2rem;
+    align-items: center;
+    border-radius: 4px;
+}
+.icon:onclick {
+    background-color: rgba(154, 156, 158, 0.603);
+}
+.icon:hover{
+    background-color: rgba(154, 156, 158, 0.603);
+}
+.imgIcon {
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5rem;
+}

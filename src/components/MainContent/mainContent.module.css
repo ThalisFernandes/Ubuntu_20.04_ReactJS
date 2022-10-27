@@ -1,0 +1,7 @@
+.MainContentDiv {
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+}
