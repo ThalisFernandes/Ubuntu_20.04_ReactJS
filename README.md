@@ -22,3 +22,4 @@ esse portifólio vai conter informações sobre mim, e minha trajetoria na área
 ## Fotos do projeto
 
 ![Img01](https://i.pinimg.com/originals/01/44/f5/0144f5017362429f5d42e235b230b430.jpg)
+![Img02](https://i.pinimg.com/originals/66/c5/64/66c564d4dcd1f769960e574017d7e4ed.jpg)
