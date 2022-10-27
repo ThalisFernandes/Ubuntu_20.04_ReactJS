@@ -1,4 +1,5 @@
-# Meu portifo com ReactJS 
+
+# Ubuntu_20.04_ReactJS
 
 Estou criando um portifólio com ReactJS, onde eu vou fazer um clone da interface do ubuntu 20.04,
 esse portifólio vai conter informações sobre mim, e minha trajetoria na área de desenvolvimento de softwares, pensei em utilizar tailwind ou bootstrap porém desisti após ter installado o tailwind como dependencia do projeto -_-.
