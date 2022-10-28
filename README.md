@@ -15,7 +15,7 @@ esse portifólio vai conter informações sobre mim, e minha trajetoria na área
 2 - após isso utilizar o comando `npm start`
 
 
-### Caso você queira utilizar meu projeto como seu portifólio também.(Pq sim tem gente tem dessas também);
+### Caso você queira utilizar meu projeto como seu portifólio também
 
 - recomendo que substitua minhas informações -_-;
 
