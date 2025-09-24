@@ -198,6 +198,78 @@ export default function PortfolioSections() {
                         <span>Data Analysis</span>
                     </div>
                 </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>Lempe (Sistema de calibração técnica)</h3>
+                        <span className={portfolioStyle.projectTech}>Full Stack</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Sistema completo de calibração técnica com interface 
+                        moderna e autenticação segura.
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>ReactJS</span>
+                        <span>Material UI</span>
+                        <span>Django</span>
+                        <span>AUTH0</span>
+                        <span>JWT</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>InfoScope (Extensão Chrome)</h3>
+                        <span className={portfolioStyle.projectTech}>Security Tool</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Extensão para análise de metadata de sites e segurança da informação. 
+                        <a href="https://github.com/ThalisFernandes/InfoScope" target="_blank" rel="noopener noreferrer" 
+                           style={{color: '#e95420', textDecoration: 'underline'}}>Acesse aqui</a>
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>Security Analysis</span>
+                        <span>Chrome Extension</span>
+                    </div>
+                </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>Youpy</h3>
+                        <span className={portfolioStyle.projectTech}>Desktop App</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Aplicação para download de áudio do YouTube e conversão de vídeos para MP3. 
+                        <a href="https://github.com/ThalisFernandes/youpy" target="_blank" rel="noopener noreferrer" 
+                           style={{color: '#e95420', textDecoration: 'underline'}}>Acesse aqui</a>
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>Python</span>
+                        <span>Audio Processing</span>
+                        <span>YouTube API</span>
+                    </div>
+                </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>Derick</h3>
+                        <span className={portfolioStyle.projectTech}>Automation</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Automação para busca de vagas no Indeed usando Selenium. 
+                        <a href="https://github.com/ThalisFernandes/Derick-Selenium-buscar-vagas-" target="_blank" rel="noopener noreferrer" 
+                           style={{color: '#e95420', textDecoration: 'underline'}}>Acesse aqui</a>
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>Python</span>
+                        <span>Selenium</span>
+                        <span>Web Scraping</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
             </div>
         </div>
     );
