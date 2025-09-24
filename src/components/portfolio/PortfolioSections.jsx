@@ -21,26 +21,15 @@ export default function PortfolioSections() {
                 </div>
                 
                 <div className={portfolioStyle.bioSection}>
-                    <h4>Minha Jornada</h4>
+                    <h4>👨‍💻 Um pouco sobre minha trajetória</h4>
                     <p>
-                        Desenvolvedor apaixonado por tecnologia com uma trajetória única. 
-                        Comecei minha jornada aos 8 anos jogando King of Fighter's 97, 
-                        o que despertou meu interesse pelo mundo digital.
+                        Comecei a estudar programação em 2015, quando ganhei meu primeiro notebook em um projeto do governo do estado de Pernambuco. Desde então, iniciei meus estudos em HTML e CSS no YouTube. Após cerca de 8 meses, comecei a aprender JavaScript (meu amorzinho ❤️).
                     </p>
                     <p>
-                        Aos 17 anos, tive meu primeiro contato com HTML e CSS, criando sites 
-                        para o jogo Lineage 2. Foi quando meu primo me apresentou ao JavaScript 
-                        e a "brincadeira começou a ficar séria".
+                        Em 2019, depois de um tempo afastado, voltei com tudo e em 2020 tive minha primeira oportunidade como desenvolvedor na NTDSOFT. Após 5 meses de prática intensa, entrei para a startup Simbiose Ventures, onde atuei como fullstack em um projeto de low-code/no-code.
                     </p>
                     <p>
-                        Após diversas experiências profissionais, aos 24 anos entrei na NTDSOFT, 
-                        onde aprendi de fato o que é programação, trabalhando com React.js, 
-                        Node.js, MySQL e PHP.
-                    </p>
-                    <p>
-                        Aos 26 anos, ingressei na Simbiose Ventures, onde ganhei uma nova família 
-                        e aprendi Python. Participei de projetos importantes como FASTCRUD e TATO, 
-                        desenvolvendo soluções inovadoras.
+                        Dentro da Simbiose, participei de mais um projeto voltado para fisioterapia e integração de funcionalidades externas. Depois, fui para a Assembleia de Deus, onde atuei como Analista de Sistemas — responsável por migrar um sistema legado em Java e implementar geração de PDFs com NodeJS.
                     </p>
                 </div>
             </div>
