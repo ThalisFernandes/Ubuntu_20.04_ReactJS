@@ -45,7 +45,7 @@ drwxr-xr-x 2 thalis thalis 4096 Jan 15 10:30 Projetos
         usage: 'contatos [-l]',
         fn: (...args) => {
             return `📧 Email: thalis.fernandes@email.com
-📱 LinkedIn: https://linkedin.com/in/thalis-fernandes
+📱 LinkedIn: https://www.linkedin.com/in/thalis-fernandes-46a107207/
 🐙 GitHub: https://github.com/ThalisFernandes
 📍 Localização: Recife, PE - Brasil
 📞 Telefone: +55 (81) 9xxxx-xxxx`;
@@ -57,7 +57,7 @@ drwxr-xr-x 2 thalis thalis 4096 Jan 15 10:30 Projetos
         fn: (...args) => {
             return `🔗 Redes Sociais:
 • GitHub: https://github.com/ThalisFernandes
-• LinkedIn: https://linkedin.com/in/thalis-fernandes
+• LinkedIn: https://www.linkedin.com/in/thalis-fernandes-46a107207/
 • Portfolio: Em construção...`;
         }
     },

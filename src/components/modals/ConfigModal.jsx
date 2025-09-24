@@ -31,11 +31,11 @@ export default function ConfigModal({ isOpen, onClose }) {
                         
                         <div className={modalStyle.contactItem}>
                             <strong>LinkedIn:</strong> 
-                            <a href="https://linkedin.com/in/thalis-fernandes" 
+                            <a href="https://www.linkedin.com/in/thalis-fernandes-46a107207/" 
                                target="_blank" 
                                rel="noopener noreferrer"
                                style={{ color: '#e95420', marginLeft: '10px' }}>
-                                linkedin.com/in/thalis-fernandes
+                                linkedin.com/in/thalis-fernandes-46a107207
                             </a>
                         </div>
                         

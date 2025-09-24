@@ -280,10 +280,10 @@ export default function PortfolioSections() {
                         <span className={portfolioStyle.contactIcon}>💼</span>
                         <div>
                             <strong>LinkedIn</strong>
-                            <a href="https://linkedin.com/in/thalis-fernandes" 
+                            <a href="https://www.linkedin.com/in/thalis-fernandes-46a107207/" 
                                target="_blank" 
                                rel="noopener noreferrer">
-                                linkedin.com/in/thalis-fernandes
+                                linkedin.com/in/thalis-fernandes-46a107207
                             </a>
                         </div>
                     </div>
