@@ -1,7 +1,8 @@
 import React from "react";
 import HeaderStyle from './header.module.css';
 import { FaCaretDown } from "react-icons/fa"; 
-import { GoTerminal, GoUnmute } from "react-icons/go";
+import { GoUnmute } from "react-icons/go";
+import { FaWifi, FaBatteryFull } from "react-icons/fa";
 export default function Header (){
     let dateObj = date();
     return (
@@ -11,15 +12,15 @@ export default function Header (){
                     <span className={HeaderStyle.span}>Activities</span>
                 </div>
                 <div className={HeaderStyle.centerElements}>
-                    <div className="flex ">
-                        <span><GoTerminal /> Terminal <FaCaretDown /></span>
+                    <div className={HeaderStyle.dateTime}>
+                        <span>{dateObj.weekDay} {dateObj.day} {dateObj.mes} {dateObj.time}</span>
                     </div>
-                    {dateObj.mes}
                 </div>
                 <div className={HeaderStyle.iconsLeft}>
-                    <GoUnmute />
-
-                    <FaCaretDown />
+                    <FaWifi className={HeaderStyle.headerIcon} />
+                    <GoUnmute className={HeaderStyle.headerIcon} />
+                    <FaBatteryFull className={HeaderStyle.headerIcon} />
+                    <FaCaretDown className={HeaderStyle.headerIcon} />
                 </div>
             </div>
         </div>
@@ -28,21 +29,41 @@ export default function Header (){
 
 function date (){
     let months = {
-        1: "Jan",
-        2: "Feb",
-        3: "Mar",
-        4: "Abr",
-        5: "Mai",
-        6: "Jun",
-        7: "Jul",
-        8: "Ago",
-        9: "Set",
-        10: "Out",
-        11: "Nov",
-        12: "Dec"
+        0: "Jan",
+        1: "Fev",
+        2: "Mar",
+        3: "Abr",
+        4: "Mai",
+        5: "Jun",
+        6: "Jul",
+        7: "Ago",
+        8: "Set",
+        9: "Out",
+        10: "Nov",
+        11: "Dez"
     }
+    
+    let weekDays = {
+        0: "Dom",
+        1: "Seg",
+        2: "Ter", 
+        3: "Qua",
+        4: "Qui",
+        5: "Sex",
+        6: "Sáb"
+    }
+    
     let date = new Date();
-
     let month = date.getMonth();
-     return {mes: months[month], day: "teste"}
+    let day = date.getDate();
+    let weekDay = date.getDay();
+    let hours = date.getHours().toString().padStart(2, '0');
+    let minutes = date.getMinutes().toString().padStart(2, '0');
+    
+    return {
+        mes: months[month], 
+        day: day,
+        weekDay: weekDays[weekDay],
+        time: `${hours}:${minutes}`
+    }
 }
