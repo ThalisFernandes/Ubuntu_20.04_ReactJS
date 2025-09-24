@@ -272,7 +272,7 @@ export default function PortfolioSections() {
                         <span className={portfolioStyle.contactIcon}>📧</span>
                         <div>
                             <strong>Email</strong>
-                            <p>thalis.fernandes@email.com</p>
+                <p>thalisfernandesrodrigues@gmail.com</p>
                         </div>
                     </div>
                     

@@ -26,7 +26,7 @@ export default function ConfigModal({ isOpen, onClose }) {
                         </div>
                         
                         <div className={modalStyle.contactItem}>
-                            <strong>Email:</strong> thalis.fernandes@email.com
+                            <strong>Email:</strong> thalisfernandesrodrigues@gmail.com
                         </div>
                         
                         <div className={modalStyle.contactItem}>

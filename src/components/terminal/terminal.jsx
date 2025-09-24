@@ -44,7 +44,7 @@ drwxr-xr-x 2 thalis thalis 4096 Jan 15 10:30 Projetos
         description: 'Mostra informações de contato.',
         usage: 'contatos [-l]',
         fn: (...args) => {
-            return `📧 Email: thalis.fernandes@email.com
+            return `📧 Email: thalisfernandesrodrigues@gmail.com
 📱 LinkedIn: https://www.linkedin.com/in/thalis-fernandes-46a107207/
 🐙 GitHub: https://github.com/ThalisFernandes
 📍 Localização: Recife, PE - Brasil
