@@ -1,14 +1,28 @@
 import React, { useState } from "react";
 import modalStyle from './modal.module.css';
 
+// Função para formatar o conteúdo markdown em HTML
+const formatContent = (content) => {
+    return content
+        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+        .replace(/^• (.+)$/gm, '<li>$1</li>')
+        .replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>')
+        .replace(/<\/ul>\s*<ul>/g, '')
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/^(?!<[h|u|l])/gm, '<p>')
+        .replace(/(?<!>)$/gm, '</p>')
+        .replace(/<p><\/p>/g, '')
+        .replace(/<p>(<[h|u])/g, '$1')
+        .replace(/(<\/[h|u].*>)<\/p>/g, '$1');
+};
+
 const files = [
     { name: "Javascript.html", type: "JS", content: `# Meus Conhecimentos Técnicos
 
 ## Conceitos Fundamentais:
 • Async / Await
 • Promise
-• Threads
-• Concorrência
 • Orientação a Objetos
 • Algoritmos & Estruturas de Dados
 • Algoritmos de busca
@@ -229,13 +243,8 @@ export default function FileExplorerModal({ isOpen, onClose }) {
                             >
                                 ← Voltar aos arquivos
                             </button>
-                            <div style={{ padding: '20px', lineHeight: '1.6' }}>
-                                <h2 style={{ color: '#e95420', marginBottom: '20px' }}>
-                                    {selectedFile.name}
-                                </h2>
-                                <p style={{ fontSize: '16px', color: '#333' }}>
-                                    {selectedFile.content}
-                                </p>
+                            <div className={modalStyle.techContent}>
+                                <div dangerouslySetInnerHTML={{ __html: formatContent(selectedFile.content) }} />
                             </div>
                         </div>
                     ) : (

@@ -183,3 +183,88 @@
     background-color: #d4440f;
     transform: translateY(-2px);
 }
+
+/* Estilos para conteúdo técnico dos modais */
+.techContent {
+    padding: 30px;
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.techContent h1 {
+    color: #e95420;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e95420;
+    padding-bottom: 10px;
+}
+
+.techContent h2 {
+    color: #333;
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-left: 4px solid #e95420;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.techContent ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.techContent li {
+    padding: 8px 0 8px 25px;
+    margin: 5px 0;
+    position: relative;
+    color: #444;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.techContent li:before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #e95420;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.techContent li:hover {
+    background-color: #f8f9fa;
+    padding-left: 30px;
+    border-radius: 4px;
+}
+
+.techContent p {
+    color: #555;
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+/* Scrollbar personalizada */
+.techContent::-webkit-scrollbar {
+    width: 8px;
+}
+
+.techContent::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.techContent::-webkit-scrollbar-thumb {
+    background: #e95420;
+    border-radius: 4px;
+}
+
+.techContent::-webkit-scrollbar-thumb:hover {
+    background: #d4440f;
+}
