@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import modalStyle from './modal.module.css';
 
 export default function GitHubModal({ isOpen, onClose }) {
+    useEffect(() => {
+        if (isOpen) {
+            // abre automaticamente o github quando o modal abrir
+            window.open('https://github.com/ThalisFernandes', '_blank');
+        }
+    }, [isOpen]);
+
     if (!isOpen) return null;
 
     return (
@@ -18,13 +25,19 @@ export default function GitHubModal({ isOpen, onClose }) {
                     </div>
                 </div>
                 <div className={modalStyle.modalBody}>
-                    <iframe 
-                        src="https://github.com/ThalisFernandes" 
-                        width="100%" 
-                        height="100%"
-                        frameBorder="0"
-                        title="GitHub Profile"
-                    />
+                    <div className={modalStyle.githubContent}>
+                        <div className={modalStyle.githubMessage}>
+                            <h2>🚀 Redirecionando para o GitHub</h2>
+                            <p>Você será redirecionado para meu perfil no GitHub em uma nova aba.</p>
+                            <p>Se não abrir automaticamente, clique no botão abaixo:</p>
+                            <button 
+                                className={modalStyle.githubButton}
+                                onClick={() => window.open('https://github.com/ThalisFernandes', '_blank')}
+                            >
+                                🔗 Abrir GitHub
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

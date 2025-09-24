@@ -139,3 +139,47 @@
 .contactItem strong {
     color: #333;
 }
+
+/* GitHub Modal Styles */
+.githubContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 40px;
+}
+
+.githubMessage {
+    text-align: center;
+    max-width: 500px;
+}
+
+.githubMessage h2 {
+    color: #e95420;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.githubMessage p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.githubButton {
+    background-color: #e95420;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.githubButton:hover {
+    background-color: #d4440f;
+    transform: translateY(-2px);
+}
