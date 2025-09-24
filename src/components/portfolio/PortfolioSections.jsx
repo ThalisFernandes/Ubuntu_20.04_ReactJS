@@ -304,7 +304,7 @@ export default function PortfolioSections() {
                         <span className={portfolioStyle.contactIcon}>📱</span>
                         <div>
                             <strong>Telefone</strong>
-                            <p>+55 (81) 9xxxx-xxxx</p>
+                            <p>+55 81 997523359</p>
                         </div>
                     </div>
                     

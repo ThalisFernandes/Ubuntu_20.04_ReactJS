@@ -54,7 +54,7 @@ export default function ConfigModal({ isOpen, onClose }) {
                         </div>
                         
                         <div className={modalStyle.contactItem}>
-                            <strong>Telefone:</strong> +55 (81) 9xxxx-xxxx
+                            <strong>Telefone:</strong> +55 81 997523359
                         </div>
                         
                         <div style={{ marginTop: '30px', padding: '20px', backgroundColor: '#f5f5f5', borderRadius: '8px' }}>
