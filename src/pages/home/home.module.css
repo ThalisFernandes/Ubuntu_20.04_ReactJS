@@ -33,3 +33,20 @@
     margin-left: 0.5rem;
 }
 
+.portfolioIcon {
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    color: #ffffff;
+}
+
+#secondGrid {
+    overflow-y: auto;
+    max-height: 90vh;
+}
+

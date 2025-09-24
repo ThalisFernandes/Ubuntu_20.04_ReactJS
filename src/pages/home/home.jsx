@@ -16,6 +16,7 @@ import settingsIcon from '../../imgs/settings.svg';
 import GitHubModal from "../../components/modals/GitHubModal";
 import FileExplorerModal from "../../components/modals/FileExplorerModal";
 import ConfigModal from "../../components/modals/ConfigModal";
+import PortfolioSections from "../../components/portfolio/PortfolioSections";
 export default function Home(){
     let folder = PressIcons(null, FolderIcon);
     const [showTerminal, setShowTerminal] = useState(false);
@@ -23,6 +24,7 @@ export default function Home(){
     const [showGitHubModal, setShowGitHubModal] = useState(false);
     const [showFileExplorer, setShowFileExplorer] = useState(false);
     const [showConfigModal, setShowConfigModal] = useState(false);
+    const [showPortfolio, setShowPortfolio] = useState(false);
 
 
     
@@ -45,11 +47,19 @@ export default function Home(){
                         <div className={homeStyle.icon} onClick={()=>setShowConfigModal(true)}>
                             <img src={settingsIcon} alt="" className={homeStyle.imgIcon} />
                         </div>
+                        <div className={homeStyle.icon} onClick={()=>{
+                            setShowPortfolio(!showPortfolio);
+                            setShowTerminal(false);
+                            setShowAboutMe(false);
+                        }}>
+                            <div className={homeStyle.portfolioIcon}>📋</div>
+                        </div>
                 </div>
                 </div>
                 <div id={homeStyle.secondGrid}>
                     {showAboutMe ? <TalentDb /> : ''}
                     { showTerminal ? <Terminator /> : ""}
+                    { showPortfolio ? <PortfolioSections /> : ""}
                 </div>
             </div>
             

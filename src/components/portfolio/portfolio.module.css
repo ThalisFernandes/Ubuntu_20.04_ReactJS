@@ -1,0 +1,302 @@
+/* Container principal do portfólio */
+.portfolioContainer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navegação por abas */
+.navigationTabs {
+    display: flex;
+    background-color: #3c3c3c;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.navTab {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navTab:hover {
+    background-color: #4a4a4a;
+}
+
+.navTab.active {
+    background-color: #e95420;
+    border-bottom: 3px solid #d44414;
+}
+
+/* Container das seções */
+.sectionContainer {
+    background-color: #383838;
+    border-radius: 0 0 8px 8px;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.sectionContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    color: #e95420;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* Seção Sobre Mim */
+.aboutContent {
+    display: grid;
+    gap: 30px;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #e95420;
+}
+
+.profileImage {
+    flex-shrink: 0;
+}
+
+.avatarPlaceholder {
+    width: 120px;
+    height: 120px;
+    background-color: #e95420;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.profileInfo h3 {
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0 0 10px 0;
+}
+
+.role {
+    color: #e95420;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.location {
+    color: #cccccc;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.bioSection {
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+.bioSection h4 {
+    color: #e95420;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.bioSection p {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    text-align: justify;
+}
+
+/* Seção Projetos */
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.projectCard {
+    background-color: #2d2d2d;
+    border-radius: 12px;
+    padding: 25px;
+    border-left: 4px solid #e95420;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(233, 84, 32, 0.2);
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.projectHeader h3 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.projectTech {
+    background-color: #e95420;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.projectDescription {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.projectTags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.projectTags span {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    border: 1px solid #666;
+}
+
+/* Seção Contato */
+.contactContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #e95420;
+}
+
+.contactIcon {
+    font-size: 1.5em;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.contactItem strong {
+    color: #e95420;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.contactItem p {
+    color: #cccccc;
+    margin: 0;
+}
+
+.contactItem a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contactItem a:hover {
+    color: #e95420;
+}
+
+.contactMessage {
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #e95420;
+}
+
+.contactMessage h3 {
+    color: #e95420;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.contactMessage p {
+    color: #e0e0e0;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .portfolioContainer {
+        padding: 10px;
+    }
+    
+    .navigationTabs {
+        flex-direction: column;
+    }
+    
+    .navTab {
+        text-align: center;
+    }
+    
+    .sectionContainer {
+        padding: 20px;
+    }
+    
+    .profileSection {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contactContent {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sectionTitle {
+        font-size: 2em;
+    }
+}
