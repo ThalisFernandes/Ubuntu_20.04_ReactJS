@@ -114,6 +114,90 @@ export default function PortfolioSections() {
                         <span>JWT</span>
                     </div>
                 </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>Criação de agentes (360 tecnologia)</h3>
+                        <span className={portfolioStyle.projectTech}>AI/ML</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Desenvolvimento de agentes inteligentes utilizando 
+                        tecnologias avançadas de IA e integração com OpenAI.
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>Python</span>
+                        <span>Langchain</span>
+                        <span>Langgraph</span>
+                        <span>OpenAI</span>
+                    </div>
+                </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>Despertar das kinesis (RPG javascript)</h3>
+                        <span className={portfolioStyle.projectTech}>Game Dev</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Jogo RPG desenvolvido em JavaScript com HTML5 Canvas. 
+                        <a href="https://rpg-javascript.vercel.app/" target="_blank" rel="noopener noreferrer" 
+                           style={{color: '#e95420', textDecoration: 'underline'}}>Acesse aqui</a>
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>Canvas</span>
+                    </div>
+                </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>Ecclessia</h3>
+                        <span className={portfolioStyle.projectTech}>Legacy Migration</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Melhoria de sistema legado em Java para Node.js, 
+                        modernizando a arquitetura e tecnologias utilizadas.
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>NodeJS</span>
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>Shooter com Javascript</h3>
+                        <span className={portfolioStyle.projectTech}>Game Dev</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Jogo de tiro desenvolvido em JavaScript puro com HTML Canvas. 
+                        <a href="https://shooter-two.vercel.app/" target="_blank" rel="noopener noreferrer" 
+                           style={{color: '#e95420', textDecoration: 'underline'}}>Acesse aqui</a>
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>Canvas</span>
+                    </div>
+                </div>
+
+                <div className={portfolioStyle.projectCard}>
+                    <div className={portfolioStyle.projectHeader}>
+                        <h3>MAVI (Projeto da MV)</h3>
+                        <span className={portfolioStyle.projectTech}>AI Healthcare</span>
+                    </div>
+                    <p className={portfolioStyle.projectDescription}>
+                        Agente de inteligência artificial para auxiliar médicos 
+                        em análises de pacientes e histórico médico completo.
+                    </p>
+                    <div className={portfolioStyle.projectTags}>
+                        <span>AI/ML</span>
+                        <span>Healthcare</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
             </div>
         </div>
     );
